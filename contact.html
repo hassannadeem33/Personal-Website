@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connect — Hassan Nadeem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body class="page-contact">
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand-mark" href="index.html">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span>Hassan Nadeem</span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+      <a href="index.html">Overview</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="work.html">Work &amp; Ventures</a>
+      <a href="gallery.html">Photo Reel</a>
+      <a href="contact.html" class="nav-pill active">Connect</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main class="subpage-main">
+    <section class="page-hero">
+      <span class="mono-tag reveal">START A CONVERSATION</span>
+      <h1 class="reveal">Open to <em>good ideas and serious work.</em></h1>
+      <p class="lead reveal">
+        Whether you want to talk about Daryaft, Data Science at NUST SEECS, editorial writing, or
+        a collaborative project, draft a quick note below.
+      </p>
+    </section>
+
+    <section class="connect-layout">
+      <form class="note-form reveal" id="noteForm">
+        <label class="field">
+          <span>Your Name</span>
+          <input type="text" id="senderName" placeholder="Who is reaching out?" required />
+        </label>
+        <label class="field">
+          <span>Topic</span>
+          <select id="senderTopic">
+            <option value="Daryaft &amp; Gov-Tech">Daryaft &amp; Gov-Tech</option>
+            <option value="Data Science &amp; Research">Data Science &amp; Research</option>
+            <option value="Writing, Editorial &amp; Strategy">Writing, Editorial &amp; Strategy</option>
+            <option value="Speaking, MUNs &amp; Community">Speaking, MUNs &amp; Community</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Message</span>
+          <textarea id="senderMessage" rows="5" placeholder="What are you building or exploring?" required></textarea>
+        </label>
+        <button type="submit" class="btn-primary">Generate Clean Note</button>
+      </form>
+
+      <aside class="note-preview reveal" aria-live="polite">
+        <span class="mono-tag">FORMATTED SUMMARY</span>
+        <h3>Ready-to-send note</h3>
+        <pre id="noteOutput">Fill out the form on the left to compose a crisp, structured message for Hassan Nadeem.</pre>
+        <button type="button" class="btn-secondary" id="copyNoteBtn">Copy Message</button>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Hassan Nadeem</strong>
+        <p>BS Data Science @ NUST SEECS &middot; Builder of Daryaft &middot; Writer &amp; Strategist</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Overview</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="work.html">Work &amp; Ventures</a>
+        <a href="gallery.html">Photo Reel</a>
+        <a href="contact.html">Connect</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/data.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

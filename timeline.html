@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timeline — Hassan Nadeem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body class="page-timeline">
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand-mark" href="index.html">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span>Hassan Nadeem</span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+      <a href="index.html">Overview</a>
+      <a href="timeline.html" class="active">Timeline</a>
+      <a href="work.html">Work &amp; Ventures</a>
+      <a href="gallery.html">Photo Reel</a>
+      <a href="contact.html" class="nav-pill">Connect</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main class="subpage-main">
+    <section class="page-hero">
+      <span class="mono-tag reveal">CHRONOLOGICAL ARC</span>
+      <h1 class="reveal">How a voice in one room became <em>systems in many.</em></h1>
+      <p class="lead reveal">
+        Filter by track or slide through the chapters to see how public speaking, editorial work,
+        brand strategy, community initiatives, and Data Science fit together.
+      </p>
+    </section>
+
+    <section class="filter-bar reveal" aria-label="Filter milestones">
+      <button type="button" class="filter-btn active" data-filter="all">All Chapters</button>
+      <button type="button" class="filter-btn" data-filter="rhetoric">Rhetoric &amp; MUNs</button>
+      <button type="button" class="filter-btn" data-filter="leadership">School &amp; Civic</button>
+      <button type="button" class="filter-btn" data-filter="craft">Editorial &amp; Strategy</button>
+      <button type="button" class="filter-btn" data-filter="data">Daryaft &amp; NUST</button>
+    </section>
+
+    <section class="scrubber-box reveal">
+      <div class="scrubber-top">
+        <span class="mono-tag">CHAPTER SCRUBBER</span>
+        <strong id="scrubberReadout">Chapter 1 of 7 — Early Stage &amp; School Foundations</strong>
+      </div>
+      <input type="range" id="chapterSlider" min="0" max="6" value="0" aria-label="Scrub through life chapters" />
+    </section>
+
+    <section class="timeline-feed" id="timelineFeed"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Hassan Nadeem</strong>
+        <p>BS Data Science @ NUST SEECS &middot; Builder of Daryaft &middot; Writer &amp; Strategist</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Overview</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="work.html">Work &amp; Ventures</a>
+        <a href="gallery.html">Photo Reel</a>
+        <a href="contact.html">Connect</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/data.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

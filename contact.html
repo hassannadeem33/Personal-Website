@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Hassan Nadeem</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient-orb" id="ambientOrb" aria-hidden="true"></div>
+  <div class="scroll-bar" id="scrollBar"></div>
+  <header class="site-header">
+    <a href="index.html" class="brand-link">
+      <span class="brand-pulse"></span>
+      <span>Hassan Nadeem</span>
+    </a>
+    <button class="burger-btn" id="burgerBtn" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Overview</a><a href="timeline.html">Timeline</a><a href="ventures.html">Ventures</a><a href="daryaft.html">Daryaft</a><a href="achievements.html">Achievements</a><a href="contact.html" class="active nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-section reveal">
+      <div class="section-header">
+        <span class="kicker-label">GET IN TOUCH</span>
+        <h2>Connect with <em>Hassan Nadeem</em>.</h2>
+        <p>
+          Reach out regarding Daryaft, Data Science projects, speaking or debating, or collaborative initiatives.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <form class="panel-card" id="contactForm">
+          <div class="input-group">
+            <label for="senderInput">Your Name</label>
+            <input type="text" id="senderInput" placeholder="Enter your name" required />
+          </div>
+          <div class="input-group">
+            <label for="topicSelect">Topic</label>
+            <select id="topicSelect">
+              <option value="Daryaft">Daryaft</option>
+              <option value="Data Science &amp; Tech">Data Science &amp; Tech</option>
+              <option value="Debating &amp; Speaking">Debating &amp; Speaking</option>
+              <option value="Community &amp; Initiatives">Community &amp; Initiatives</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="messageInput">Message</label>
+            <textarea id="messageInput" rows="5" placeholder="Write your message for Hassan Nadeem" required></textarea>
+          </div>
+          <button type="submit" class="btn-solid">Format Message</button>
+        </form>
+
+        <div class="panel-card">
+          <span class="kicker-label">MESSAGE PREVIEW</span>
+          <h3 style="font-size: 1.75rem; margin: 0.35rem 0 0.85rem;">Formatted Note</h3>
+          <pre id="draftPreview">To Hassan Nadeem regarding Daryaft
+
+Write a note on the left to preview it here.</pre>
+          <button type="button" class="btn-soft" id="copyDraftBtn">Copy Note</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-row">
+      <div>
+        <strong>Hassan Nadeem</strong>
+        <p>Data Science at NUST, Founder of Daryaft, Debater &amp; Builder</p>
+      </div>
+      <div class="footer-nav">
+        <a href="index.html">Overview</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="ventures.html">Ventures</a>
+        <a href="daryaft.html">Daryaft</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
